@@ -21,7 +21,7 @@ var check_num = /[0-9]/; // 숫자
 var check_eng = /[a-zA-Z]/; // 문자
 
 
-for (let index = 0; index < 45; index++) {
+for (let index = 0; index < 5; index++) {
   img_src.push("./source/background/" + index + ".jpg");
 }
 
