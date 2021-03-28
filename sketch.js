@@ -2,7 +2,7 @@ let count = 20;
 let state = [];
 let img_1;
 let img_src = [];
-let arrow_img_src = ["/source/arrow/0A.png", "/source/arrow/1A.png", "/source/arrow/2A.png", "/source/arrow/3A.png"]
+let arrow_img_src = ["school_for_gifted/source/arrow/0A.png", "school_for_gifted/source/arrow/1A.png", "school_for_gifted/source/arrow/2A.png", "school_for_gifted/source/arrow/3A.png"]
 let img_idx = 0;
 let img_list = [];
 let arrow_img_list = [];
@@ -22,7 +22,7 @@ var check_eng = /[a-zA-Z]/; // 문자
 
 
 for (let index = 0; index < 45; index++) {
-  img_src.push("/source/background/" + index + ".jpg");
+  img_src.push("school_for_gifted/source/background/" + index + ".jpg");
 }
 
 
