@@ -54,7 +54,7 @@ body {
   height: 100%;
   overflow-y: scroll;
   border-radius: 30px 30px 30px 30px;
-  cursor: url('./source/arrow/0A.png'), auto;
+  cursor: url('./source/arrow/cursor.png'), auto;
 
   /* width: fit-content;
   block-size: fit-content;
