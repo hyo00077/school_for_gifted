@@ -102,7 +102,6 @@ div.menus>div.small {
   /* background-color: rgb(255, 255, 255); */
   padding: 20px;
   /* border-radius: 30px 30px 30px 30px; */
-
   font-family: 'Lexend', sans-serif;
   text-decoration: underline;
   font-weight: bold;
@@ -118,48 +117,70 @@ cursor:-webkit-grab;
 
 .header {
   position: fixed;
-
-  /* grid-column: 1/7;
-  grid-row: 4/5; */
-  justify-content: left;
-  /* align-items: center; */
+  display: flex;
   height: auto;
-  width: auto;
+  width: 100%;
   overflow: hidden;
   z-index: 1;
   top: 70vh;
+  letter-spacing: -2vh;
 }
 
-.header>h1 {
+.header>div.first {
   /* font-size: 100%; */
   /* line-height: 100%; */
-  display: inline-block;
   font-family: 'Lexend', sans-serif;
   font-weight: bold;
   /* letter-spacing: -0.4rem; */
   color: rgb(252, 11, 216);
-  overflow: disabled;
+  /* overflow: hidden; */
   white-space: nowrap;
-  padding-left: 100%;
+  /* padding-left: 100%; */
   animation: marquee 20s linear infinite;
+  animation-delay: -20s;
 }
-
-
+.header>div.second{
+  /* font-size: 100%; */
+  /* line-height: 100%; */
+  font-family: 'Lexend', sans-serif;
+  font-weight: bold;
+  /* letter-spacing: -0.4rem; */
+  color: rgb(252, 11, 216);
+  /* overflow: hidden; */
+  white-space: nowrap;
+  /* padding-left: 100%; */
+  animation: marquee2 20s linear infinite;
+  animation-delay: -10s;
+}
 
 
 @keyframes marquee {
   0% {
-    transform: translate(0, 0);
+    transform: translateX(100%);
   }
 
   100% {
-    transform: translate(-100%, 0);
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes marquee2 {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-200%);
   }
 }
 
 @media screen and (min-width: 601px) {
   div.header {
     font-size: 32vh;
+  }
+
+  div.header > div > h1 > span{
+    letter-spacing: 0;
   }
 
   div.menus>div.small {
@@ -179,8 +200,12 @@ cursor:-webkit-grab;
 @media screen and (max-width: 600px) {
   div.header {
     font-size: 32vh;
-
   }
+
+  div.header > div > h1 > span{
+    letter-spacing: 0;
+  }
+
   div.menus>div.small {
     font-size: 18px;
     line-height: 160%;
