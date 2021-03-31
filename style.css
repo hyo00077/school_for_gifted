@@ -59,7 +59,7 @@ body {
   overflow-y: scroll;
   /* border-radius: 30px 30px 30px 30px; */
   /* padding: 20px; */
-  cursor: url('./source/arrow/0A.png'), auto;
+  cursor: url('./source/arrow/cursor.png'), auto;
   white-space: normal;
 }
 
